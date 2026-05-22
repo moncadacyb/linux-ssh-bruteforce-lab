@@ -1,0 +1,17 @@
+May 21 18:22:11 RED sshd[1021]: Failed password for RED from 192.168.1.102 port 45544 ssh2
+
+May 21 18:22:14 RED sshd[1025]: Failed password for invalid user root from 192.168.1.102 port 45552 ssh2
+
+May 21 18:22:18 RED sshd[1030]: Failed password for invalid user admin from 192.168.1.102 port 45560 ssh2
+
+May 21 18:22:24 RED sshd[1038]: Failed password for invalid user test from 192.168.1.102 port 45571 ssh2
+
+May 21 18:22:30 RED sshd[1045]: Failed password for kali from 192.168.1.102 port 45580 ssh2
+
+May 21 18:22:37 RED sshd[1052]: Failed password for invalid user guest from 192.168.1.102 port 45591 ssh2
+
+May 21 18:22:45 RED sshd[1060]: Failed password for invalid user oracle from 192.168.1.102 port 45602 ssh2
+
+May 21 18:22:53 RED sshd[1068]: Failed password for root from 192.168.1.102 port 45610 ssh2
+
+May 21 18:23:01 RED sshd[1075]: Failed password for invalid user support from 192.168.1.102 port 45622 ssh2

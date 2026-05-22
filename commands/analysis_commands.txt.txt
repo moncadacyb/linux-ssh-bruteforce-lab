@@ -1,0 +1,54 @@
+# SSH connection from Kali to Ubuntu RED
+
+ssh RED@192.168.1.146
+
+
+# Simulated brute force attempts
+
+ssh root@192.168.1.146
+
+ssh admin@192.168.1.146
+
+ssh test@192.168.1.146
+
+
+# View failed SSH login attempts
+
+grep "Failed password" /var/log/auth.log
+
+
+# Extract attacker IPs
+
+grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c
+
+
+# Monitor logs in real time
+
+tail -f /var/log/auth.log
+
+
+# Search SSH-related events
+
+grep "ssh" /var/log/auth.log
+
+
+# Check firewall status
+
+sudo ufw status verbose
+
+sudo ufw status numbered
+
+
+# Block attacker IP
+
+sudo ufw deny from 192.168.1.102
+
+
+# Verify network connectivity
+
+ping 192.168.1.146
+
+
+# Check rsyslog service
+
+sudo systemctl status rsyslog --no-pager
